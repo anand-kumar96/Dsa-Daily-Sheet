@@ -1,3 +1,3 @@
 # Table of contents
 
-* [two sum](README.md)
+* [two sum.java](README.md)
