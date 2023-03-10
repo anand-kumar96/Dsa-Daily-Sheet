@@ -4,8 +4,7 @@ description: //https://leetcode.com/problems/two-sum/
 
 # two sum
 
-````java
-```java
+
 import java.io.*; // for handling input/output
 import java.util.*; // contains Collections framework
 
@@ -32,5 +31,4 @@ class Main {
         }
     }
 }
-```
-````
+
