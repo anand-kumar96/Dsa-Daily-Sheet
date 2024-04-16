@@ -26,7 +26,7 @@ class Solution {
     }
 }
 // Time complexity:O(N)
-// Space complexity:O(N)
+// Space complexity:O(1)
 
 //method 02
 class Solution {
