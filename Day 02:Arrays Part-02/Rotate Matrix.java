@@ -20,6 +20,36 @@ class Solution {
         }
     }
 }
+
+
+/// Solution: 02
+class Solution {
+    public static void reverseRow(int matrix[][],int i, int low, int high) {
+        while(low<high){
+            int temp = matrix[i][low];
+                matrix[i][low] = matrix[i][high];
+                matrix[i][high]= temp;
+            low++;
+            high--;
+        }
+    }
+    public void rotate(int[][] matrix) {
+      int n = matrix.length;
+     //1 do transpose
+     for(int i=0;i<n;i++) {
+     for(int j=i+1;j<n;j++){
+        int temp = matrix[i][j];
+         matrix[i][j]= matrix[j][i];
+         matrix[j][i]=temp;
+     }
+     }
+     //2 then reverse each row
+        for(int i=0;i<n;i++){
+          reverseRow(matrix,i,0,n-1);
+        }
+    }
+}
+
 /*
 top=(i,j)
 right=(i,n-1-j)
